@@ -42,11 +42,7 @@ class ModelViewerState extends State<ModelViewer> {
   @override
   Widget build(final BuildContext context) {
     if (_proxy == null || _webViewController == null) {
-      return const Center(
-        child: CircularProgressIndicator(
-          semanticsLabel: 'Loading Model Viewer',
-        ),
-      );
+      return SizedBox.shrint();
     }
     return WebViewWidget(
       controller: _webViewController!,
