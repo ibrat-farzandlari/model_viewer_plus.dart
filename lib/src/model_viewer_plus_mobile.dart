@@ -42,7 +42,7 @@ class ModelViewerState extends State<ModelViewer> {
   @override
   Widget build(final BuildContext context) {
     if (_proxy == null || _webViewController == null) {
-      return SizedBox.shrint();
+      return SizedBox.shrink();
     }
     return WebViewWidget(
       controller: _webViewController!,
